@@ -10,7 +10,7 @@ import (
 )
 
 func main() {
-	root := "/Volumes/ACMBornDigital/Archivematica-Staging/in-process/ingest/UA_RG_9-8/UA_RG_9-8-batch-1"
+	root := args[0]
 	//check that the root exists and is a dir
 	fi, err := os.Stat(root)
 	if err != nil {
